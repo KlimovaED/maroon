@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/reset200802.css"/>
+    <link rel="stylesheet" href="style/catalog-style/catalog.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <img
+          src="./assets/header/MAROON.png"
+          class="header__logo-img"
+          alt="Logo"
+        />
+      </div>
+      <nav class="menu header__menu">
+        <a href="#" class="menu__link link">Каталог</a>
+        <a href="#" class="menu__link link">О нас</a>
+        <a href="#" class="menu__link link">Контакты</a>
+      </nav>
+      <div class="header__img">
+        <a href="#" class="header__link link"
+          ><img
+            src="/assets/header/body.png"
+            class="header__link-img"
+            alt="People"
+        /></a>
+        <a href="#" class="header__link link"
+          ><img
+            src="/assets/header/basket.png"
+            class="header__link-img"
+            alt="Basket"
+        /></a>
+      </div>
+    </header>
+    <main class="main">
+      <div class="catalog">
+        <div class="catalog__header">
+          <h2 class="catalog__title"> Каталог</h2>
+          <button class=" catalog__click btn">Фильтры</button>
+        </div>
+        <div class="catalog__filters">
+          <ul class="catalog__filters-name">
+            Уход для лица
+            <li class="catalog__filters-list">
+              <input class="catalog__choice" id="cream" type="checkbox" value="facial-care" name="facial-care"/>
+              <label class="catalog__product" for="cream">Крема</label>
+            </li>
+            <li class="catalog__filters-list">
+              <input class="catalog__choice" id="serum" type="checkbox" value="facial-care" name="facial-care"/>
+              <label class="catalog__product" for="serum">Сыворотки</label>
+            </li>
+            <li class="catalog__filters-list">
+              <input class="catalog__choice" id="mask" type="checkbox" value="facial-care" name="facial-care"/> 
+              <label class="catalog__product" for="mask">Маски</label>
+            </li>
+            <li class="catalog__filters-list">
+              <input class="catalog__choice" id="foam" type="checkbox" value="facial-care" name="facial-care"/> 
+              <label class="catalog__product" for="foam">Пенки</label>
+            </li>
+            <li class="catalog__filters-list">
+              <input class="catalog__choice" id="tonik" type="checkbox" value="facial-care" name="facial-care"/>
+              <label class="catalog__product" for="tonik">Тоники</label>
+            </li>
+            <li class="catalog__filters-list" >
+              <input class="catalog__choice" id="powder" type="checkbox" value="facial-care" name="facial-care"/>
+              <label class="catalog__product" for="powder">Пудры</label>
+            </li>
+          </ul>
+          <ul class="catalog__filters-name">
+            Уход для тела
+            <li class="catalog__filters-list">
+              <input class="catalog__choice" id="creama" type="checkbox" value="body-care"  name="body-care"/>
+              <label class="catalog__product" for="creama">Крема</label>
+            </li>
+            <li class="catalog__filters-list">
+              <input class="catalog__choice" id="oil" type="checkbox" value="body-care" name="body-care"/> 
+              <label class="catalog__product" for="oil">Масла</label>
+            </li>
+            <li class="catalog__filters-list">
+              <input class="catalog__choice" id="scrub" type="checkbox" value="body-care" name="body-care"/>
+              <label class="catalog__product" for="scrub">Скрабы</label>
+            </li>
+            <li class="catalog__filters-list">
+              <input class="catalog__choice" id="soap" type="checkbox" value="body-care" name="body-care"/> 
+              <label class="catalog__product" for="soap">Мыло</label>
+            </li>
+            <li class="catalog__filters-list">
+              <input class="catalog__choice" id="bath-bomb" type="checkbox" value="body-care" name="body-care"/>
+              <label class="catalog__product" for="bath-bomb">Бомбочки для ванны</label>
+            </li>
+            <li class="catalog__filters-list" >
+              <input class="catalog__choice" id="bath-salt" type="checkbox" value="body-care" name="body-care"/>
+              <label class="catalog__product" for="bath-salt">Соль для ванны</label>
+            </li>
+          </ul>
+          <ul class="catalog__filters-name">
+            Тип кожи
+            <li class="catalog__filters-list">
+              <input class="catalog__choice" id="normal" type="checkbox" value="skin-type" name="skin-type"/>
+              <label class="catalog__product" for="normal">Нормальная</label>
+            </li>
+            <li class="catalog__filters-list">
+              <input class="catalog__choice" id="dry" type="checkbox" value="skin-type" name="skin-type"/> 
+              <label class="catalog__product" for="dry">Сухая</label>
+            </li>
+            <li class="catalog__filters-list">
+              <input class="catalog__choice" id="fat" type="checkbox" value="skin-type" name="skin-type"/> 
+              <label class="catalog__product" for="fat">Жирная</label>
+            </li>
+            <li class="catalog__filters-list">
+              <input class="catalog__choice" id="combined" type="checkbox" value="skin-type" name="skin-type"/>
+              <label class="catalog__product" for="combined">Комбинированная</label>
+            </li>
+            <div class="catalog__filters-button">
+            <button class="btn click">Применить</button>
+            <button class=" btn click">Сбросить</button>
+            </div>
+          </ul>
+        </div>
+        <div class="catalog__grid">
+          <div class="catalog__card card">
+            <img src="assets/catalog/Rectangle47.png" class="card__img" alt="img" />
+            <div class="card__info">
+              <h3 class="card__title">Paradise</h4>
+              <p class="card__price">590 &#8381</p>
+              <p class="card__body">минеральная пудра</p>
+              <p class="card__weight">15g</p>
+            </div>
+          </div>
+          <div class="catalog__card">
+            <img src="assets/catalog/BathBomb1.png" class="card__img" alt="img" />
+            <div class="card__info">
+              <h3 class="card__title">Sun</h4>
+              <p class="card__price">90 &#8381</p>
+              <p class="card__body">бомбочка для ванны</p>
+              <p class="card__weight">20g</p>
+            </div>
+          </div>
+          <div class="catalog__card">
+            <img src="assets/catalog/Rectangle49.png" class="card__img" alt="img" />
+            <div class="card__info">
+              <h3 class="card__title">Violet</h4>
+              <p class="card__price">890 &#8381</p>
+              <p class="card__body">крем для лица</p>
+              <p class="card__weight">50ml</p>
+            </div>
+          </div>
+          <div class="catalog__card">
+            <img src="assets/catalog/Rectangle50.png" class="card__img" alt="img" />
+            <div class="card__info">
+              <h3 class="card__title">Clean</h4>
+              <p class="card__price">490 &#8381</p>
+              <p class="card__body">крем для лица</p>
+              <p class="card__weight">100g</p>
+            </div>
+          </div>
+          <div class="catalog__card">
+            <img src="assets/catalog/Rectangle51.png" class="card__img" alt="img" />
+            <div class="card__info">
+              <h3 class="card__title">Coconut</h4>
+              <p class="card__price">890 &#8381</p>
+              <p class="card__body">крем для лица</p>
+              <p class="card__weight">300ml</p>
+            </div>
+          </div>
+          <div class="catalog__card">
+            <img src="assets/catalog/Rectangle53.png" class="card__img" alt="img" />
+            <div class="card__info">
+              <h3 class="card__title">Violet</h4>
+              <p class="card__price">890 &#8381</p>
+              <p class="card__body">крем для лица</p>
+              <p class="card__weight">50ml</p>
+            </div>
+          </div>
+          <div class="catalog__card">
+            <img src="assets/catalog/Rectangle54.png" class="card__img" alt="img" />
+            <div class="card__info">
+              <h3 class="card__title">Violet</h4>
+              <p class="card__price">890 &#8381</p>
+              <p class="card__body">крем для лица</p>
+              <p class="card__weight">50ml</p>
+            </div>
+          </div>
+          <div class="catalog__card">
+            <img src="assets/catalog/Bath Bomb2.png" class="card__img" alt="img" />
+            <div class="card__info">
+              <h3 class="card__title">Violet</h4>
+              <p class="card__price">890 &#8381</p>
+              <p class="card__body">крем для лица</p>
+              <p class="card__weight">50ml</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="viewed">
+        <h2 class="viewed__title">Вы недавно смотрели</h2>
+        <div class="viewed__grid">
+          <img class="viewed__img" src="/assets/catalog/Rectangle54.png" alt="img"/>
+          <img class="viewed__img" src="/assets/catalog/Rectangle52.png" alt="img"/>
+          <img class="viewed__img" src="/assets/catalog/Rectangle53.png" alt="img"/>
+          <img class="viewed__img" src="/assets/catalog/Rectangle51.png" alt="img"/>
+        </div>
+      </div>
+      <div class="joinus">
+        <div class="joinus__container">
+          <div class="joinus__grid-image">
+              <img src="/assets/main_page/1.png" alt="Image 1" />
+              <img src="/assets/main_page/2.png" alt="Image 2" />
+              <img src="/assets/main_page/3.png" alt="Image 3" />
+              <img src="/assets/main_page/4.png" alt="Image 4" />
+              <img src="/assets/main_page/5.png" alt="Image 5" />
+              <img src="/assets/main_page/6.png" alt="Image 6" />
+          </div>
+          <div class="joinus__all">
+            <h2 class="joinus__title">Присоединяйтесь к нам</h2>
+            <p class="joinus__description">
+              Подпишитесь на наш аккаунт @marooncare<br />
+              и узнавайте о новинках и акциях первыми
+            </p>
+            <button class="btn joinus__button">Подписаться</button>
+          </div>
+        </div>
+      </div>
+      <div class="contacts">
+        <div class="contacts__info">
+          <h2 class="contacts__title">Контакты</h2>
+          <div class="contacts__adress">
+            <h3>Адрес</h3>
+            <p>Санкт-Петербург, ул. Большая Конюшенная, 19</p>
+          </div>
+          <div class="contacts__phone">
+            <h3>Телефон</h3>
+            <p>+7 (923) 888-90-60</p>
+          </div>
+          <div class="contacts__email">
+            <h3>E-mail</h3>
+            <p>info@maroon.ru</p>
+          </div>
+          <div class="contacts__social">
+            <a href="#" class="social__link">
+              <img src="./assets/footer/facebook.png" alt="Facebook" />
+            </a>
+            <a href="#" class="social__link">
+              <img src="./assets/footer/insta.png" alt="Instagram" />
+            </a>
+            <a href="#" class="social__link">
+              <img src="./assets/footer/twit.png" alt="Twitter" />
+            </a>
+          </div>
+        </div>
+        <div class="contacts__img">
+          <img
+            src="./assets/main_page/map.png"
+            alt="map"
+            class="contacts__pic"
+          />
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__logo">
+          <img
+            src="./assets/footer/MAROON.png"
+            class="footer__logo-img"
+            alt="Logo"
+          />
+        </div>
+        <nav class="menu footer__menu">
+          <a href="#" class="menu__link link">Каталог</a>
+          <a href="#" class="menu__link link">О нас</a>
+          <a href="#" class="menu__link link">Магазины</a>
+          <a href="#" class="menu__link link">Контакты</a>
+        </nav>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link link">
+            <img
+              src="./assets/footer/facebook.png"
+              class="footer__social-img"
+              alt="Facebook"
+            />
+          </a>
+          <a href="#" class="footer__social-link link">
+            <img
+              src="./assets/footer/insta.png"
+              class="footer__social-img"
+              alt="Instagram"
+            />
+          </a>
+          <a href="#" class="footer__social-link link">
+            <img
+              src="./assets/footer/twit.png"
+              class="footer__social-img"
+              alt="Twitter"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__bottom-left">
+          MAROON &copy; 2020 Все права защищены
+        </div>
+        <div class="footer__bottom-right">Политика конфиденциальности</div>
+      </div>
+    </footer>
+  </body>
+</html>
+
